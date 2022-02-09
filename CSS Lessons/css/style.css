@@ -1,18 +1,14 @@
-.container {
-  width: 200px;
-  min-height: 100px;
-  background-color: aquamarine;
-  border: 2px dotted blueviolet;
-  position: sticky;
-  top: 10px;
-  left: 10px;
+.box {
+  /* position: relative; */
+  height: 200px;
+  width: 400px;
+  background-color: red;
+  padding: 20px;
 }
 
-body {
-  border: 2px groove green;
-  height: 1400px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* position: relative; */
+.child-box {
+  position: relative;
+  height: 80px;
+  background-color: aquamarine;
+  width: 20%;
 }

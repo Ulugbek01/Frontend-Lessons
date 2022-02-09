@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -6,7 +6,13 @@ function App() {
     <div className="App">
       <ul className="navigation-items">
         <li>
-          <Link className="nav-link" to={"/"}>
+          <Link
+            className="nav-link"
+            to={{
+              pathname: "/",
+              state: { name: "Ulugbek", surname: "Duvlanov" },
+            }}
+          >
             Home
           </Link>
         </li>

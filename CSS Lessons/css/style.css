@@ -1,28 +1,17 @@
+.container {
+  font-size: 20px;
+  border: 1px solid red;
+  padding: 2rem;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+}
+
 .box {
-  /* position: relative; */
-  height: 200px;
-  width: 400px;
-  background-color: red;
-  padding: 20px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
-.child-box {
-  position: relative;
-  height: 80px;
-  background-color: aquamarine;
-  width: 20%;
-  font-size: 1em;
-}
-
-.fixed-box {
-  height: 100px;
-  background-color: blue;
-  position: fixed;
-  width: 50%;
-  font-size: 0.5em;
-}
-
-body {
-  font-size: 20px;
+.box p {
+  font-size: 0.8rem;
 }

@@ -1,12 +1,13 @@
+/* Core styles */
 @font-face {
-  font-family: ("OpenSans");
-  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: ("OpenSans");
-  src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/static/OpenSans/OpenSans-Bold.ttf");
   font-weight: 600;
 }
 
@@ -21,6 +22,7 @@ body {
   color: #fff;
 }
 
+/* Navbar styles */
 .navbar {
   display: flex;
   align-items: center;
@@ -33,12 +35,19 @@ body {
 }
 
 .navigation-items li {
+  margin-right: 20px;
   list-style: none;
+}
+
+.navigation-items li:last-child {
+  margin-right: 0;
 }
 
 .navigation-items a {
   text-decoration: none;
   color: #fff;
+  font-family: "OpenSans";
+  font-weight: 600;
 }
 
 .logo {
@@ -50,4 +59,14 @@ body {
   margin-left: 20px;
   color: #3a68b8;
   font-family: "OpenSans";
+}
+
+.sign-in button {
+  background-color: #3a68b8;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

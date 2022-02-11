@@ -1,7 +1,10 @@
 .container {
-  font-size: 20px;
-  border: 1px solid red;
-  padding: 2rem;
+  width: 412px;
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
 }
 
 .container h2 {

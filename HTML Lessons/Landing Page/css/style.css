@@ -224,4 +224,85 @@ body {
 
 .footer-container {
   display: flex;
+  padding: 80px 0 100px;
+}
+
+.footer-container > div {
+  flex: 1;
+}
+
+.footer-logo__title {
+  color: #3a68b8;
+  padding: 8px 0 10px;
+}
+
+.footer .discription {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.6;
+}
+
+.contact-info__wrapper {
+  padding-right: 30px;
+}
+
+.contact-info__wrapper .contact-info {
+  margin-top: 36px;
+}
+
+.contact-info li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+.footer-container > div li {
+  list-style: none;
+}
+
+.footer-list__wrapper h4 {
+  margin-bottom: 32px;
+}
+
+.footer-list__wrapper li {
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.about-me p {
+  opacity: 0.6;
+  font-size: 14px;
+  margin: 32px 0 30px;
+}
+
+.about-me .company-website {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.about-me .social-networks {
+  margin: 20px 0;
+}
+
+.footer .social-networks i {
+  margin-right: 20px;
+  background-color: #08101e;
+}
+
+#language {
+  background-color: #08101e;
+  color: #fff;
+  border: none;
+  outline: none;
 }

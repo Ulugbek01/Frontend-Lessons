@@ -34,10 +34,13 @@ body {
 
 /* Navbar styles */
 .navbar {
-  padding-top: 10px;
+  padding: 10px 0;
+  background-color: #08101e;
+  position: fixed;
+  width: 100%;
 }
 
-.navbar > div {
+.navbar-container > div {
   display: inline-block;
   vertical-align: middle;
 }
@@ -143,11 +146,8 @@ body {
   margin-left: 20px;
 }
 
-.links-container .icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
+.links-container .fa-play {
+  margin-right: 8px;
 }
 
 /* Partners styles */
@@ -295,9 +295,9 @@ body {
   margin: 20px 0;
 }
 
-.footer .social-networks i {
+.footer .social-networks a {
   margin-right: 20px;
-  background-color: #08101e;
+  color: #fff;
 }
 
 #language {
@@ -305,4 +305,8 @@ body {
   color: #fff;
   border: none;
   outline: none;
+}
+
+.social-networks i {
+  cursor: pointer;
 }

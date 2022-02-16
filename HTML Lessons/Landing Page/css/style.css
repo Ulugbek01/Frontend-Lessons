@@ -208,7 +208,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .service > div {
@@ -331,6 +331,10 @@ body {
 
 /* Media query */
 @media only screen and (max-width: 576px) {
+  html {
+    /* font-size: 14px; */
+  }
+
   .container {
     width: 94%;
   }
@@ -341,7 +345,7 @@ body {
 
   .navbar-container .logo p {
     margin-left: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .navigation-items__wrapper,
@@ -364,11 +368,11 @@ body {
   }
 
   .home .subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .home .title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   /* Partners styles */
@@ -399,6 +403,14 @@ body {
     flex-direction: column-reverse;
   }
 
+  .blog .title {
+    font-size: 20px;
+  }
+
+  .blog-content p {
+    font-size: 14px;
+  }
+
   .blog-image img {
     width: 80%;
   }
@@ -406,5 +418,10 @@ body {
   /* Footer styles */
   .footer-container {
     flex-direction: column;
+  }
+
+  .footer-list__wrapper h4,
+  .about-me h4 {
+    font-size: smaller;
   }
 }

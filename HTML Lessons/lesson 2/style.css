@@ -1,18 +1,15 @@
-body {
-  display: flex;
-  margin: 0;
+.normal {
+  line-height: normal;
 }
 
-.left {
-  /* display: inline-block; */
-  height: 100vh;
-  background-color: aqua;
-  width: 20%;
-  position: sticky;
-  top: 0px;
+.number {
+  line-height: 2; /* 2*16px = 32px */
 }
 
-.right {
-  line-height: 2;
-  width: 80%;
+.length {
+  line-height: 40px;
+}
+
+.percent {
+  line-height: 120%; /* 16px * 1.2 = 19.2px */
 }

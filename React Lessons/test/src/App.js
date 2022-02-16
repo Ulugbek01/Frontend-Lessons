@@ -1,37 +1,25 @@
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, NavLink, Link } from "react-router-dom";
 import "./App.css";
+import { Sidebar } from "./components/Sidebar";
+import { sidebar } from "./utils/sidebar";
 
 function App() {
+  const [sidebarInfo, setSidebar] = useState(sidebar);
+  console.log(sidebar.length);
   return (
-    <div className="App">
-      <ul className="navigation-items">
-        <li>
-          <Link
-            className="nav-link"
-            to={{
-              pathname: "/",
-              state: { name: "Ulugbek", surname: "Duvlanov" },
-            }}
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to={"/About"}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to={"/Contact"}>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to={"*"}>
-            Not Page
-          </Link>
-        </li>
-      </ul>
+    <div className="app">
+      <BrowserRouter>
+        <Sidebar />
+        {sidebarInfo.map(({ id, title, path, element: Element }) => (
+          <div key={id}>
+            <Routes>
+              <Route key={id} path={path} element={<Element />} />
+              {/* <Route path="*" element={<h1>Page Not Found</h1>} /> */}
+            </Routes>
+          </div>
+        ))}
+      </BrowserRouter>
     </div>
   );
 }

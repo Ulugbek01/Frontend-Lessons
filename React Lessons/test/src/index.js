@@ -9,15 +9,15 @@ import { NotPage } from "./NotPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="*" element={<NotPage />} />
       </Routes>
-      <App />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import { App } from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./Home";
-import { About } from "./About";
-import { Contact } from "./Contact";
-import { NotPage } from "./NotPage";
-import { App2 } from "./App2";
+import { Context } from "./context";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,8 +14,9 @@ ReactDOM.render(
         <Route path="*" element={<NotPage />} />
       </Routes>
     </BrowserRouter> */}
-    <App />
-    <App2 />
+    <Context>
+      <App />
+    </Context>
   </React.StrictMode>,
   document.getElementById("root")
 );

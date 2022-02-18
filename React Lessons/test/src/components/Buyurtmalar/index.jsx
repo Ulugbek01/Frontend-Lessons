@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const Buyurtmalar = () => {
+export const Buyurtmalar = ({dispatch}) => {
   return (
-    <div>Buyurtmalar</div>
+    <div>
+      <button onClick={()=> dispatch({type:'plus'})}>add</button>
+      Buyurtmalar
+    </div>
   )
 }

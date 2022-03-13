@@ -211,6 +211,10 @@ body {
   overflow: hidden;
 }
 
+.fa-solid {
+  cursor: pointer;
+}
+
 .service > div {
   padding: 0.94rem;
 }
@@ -331,10 +335,6 @@ body {
 
 /* Media query */
 @media only screen and (max-width: 576px) {
-  html {
-    /* font-size: 14px; */
-  }
-
   .container {
     width: 94%;
   }
